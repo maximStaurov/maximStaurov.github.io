@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.content {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+address {
+    padding-top: 10px;
+}
+
+a {
+    padding: 1px;
+    text-decoration: none;
+    color: #af9375;
+}
+
+a:hover {
+    color: #8b837a; 
+    box-shadow: 1px 1px 1px #af9375;
+} 
+
+li {
+    list-style: none;
+}
+
+.about {
+    height: 100vh;
+    background: #fff;
+    background-image: url('flowers2.jpg');
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.about_text_position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.separator {
+    margin: 10px 0;
+}
+
+.text {
+   display: flex;
+   width: 600px;
+   margin: 20px;
+   padding: 50px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.block {
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.icon {
+    width: 90px;
+    height: 80px;
+    border: 2px solid #94908b;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.achievements {
+    height: 300px;
+    background: rgb(182, 182, 182);
+    box-sizing: border-box;
+    color: #58534e;
+}
+
+.achievements h2 {
+    margin-top: 50px;
+}
+
+.achievements_position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements_text {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.achievements_text_block {
+    text-align: center;
+}
+
+.figure {
+    display: block;
+    visibility: hidden;
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    animation-name: animateDisplay;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.achievements_text_block P {
+    width: 150px;
+}
+
+.contacts {
+    height: 200px;
+    background: rgb(235, 226, 219);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contacts_text {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    color: #8b837a;
+}
+
+.social, .address {
+    padding-top: 50px;
+}
+
+.hobby {
+    height: 350px;
+    background:rgba(100, 144, 235, 0.3);
+    background-image: url('https://oir.mobi/uploads/posts/2021-01/1611951971_38-p-krasivii-prozrachnii-fon-42.png');
+    background-repeat: no-repeat;
+    background-size: auto 400px;
+    background-position-x: right;
+    box-sizing: border-box;
+}
+
+.hobby_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #8b837a;
+}
+
+.hobby p { 
+    width: 600px;
+    color: #8b837a;
+}
+
+@keyframes animateDisplay {
+    0% {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+      
+    100% {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
